@@ -1,3 +1,17 @@
+<style>
+audio{
+  width:150px;
+  height:40px;
+}
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+  display: none !important;
+}
+
+</style>
+
+
 # Hello World
 
 
