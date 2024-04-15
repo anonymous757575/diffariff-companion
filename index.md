@@ -18,9 +18,6 @@ audio::-webkit-media-controls-seek-forward-button {
 
 This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
 
-* [User Study Sample Questions](#user-study-sample-questions)
-  + [Audio Quality Assessment](#audio-quality-assessment)
-  + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
 * [Sound Examples](#sound-examples)
   + [Context-based Control](#context-based-control)
   + [Text-based Control](#text-based-control)
@@ -30,20 +27,15 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
     - [With Context](#with-context-1)
     - [Without Context](#without-context)
   + [Bonus](#bonus)
+    - [Inpainting](#inpainting)
     - [Interpolations](#interpolations)
     - [Variations](#variations)
     - [Loop Sampling](#loop-sampling)
     - [Stereo width](#stereo-width)
+* [User Study Sample Questions](#user-study-sample-questions)
+  + [Audio Quality Assessment](#audio-quality-assessment)
+  + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
 * [References](#references)
-
-## User Study Sample Questions
-Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the GoListen online platform [[1](#references)]. Citation will be added in the camera-ready version.
-
-### Audio Quality Assessment 
-
-### Subjective Audio Prompt Adherence
-
-
 
 
 ## Sound Examples
@@ -241,8 +233,11 @@ Diff-A-Riff also allows the generation of solo instrument tracks conditioned on 
 </table>
 
 
+
 ### Bonus
 In this section, we demonstrate controls derived from the use of a diffusion framework.
+
+#### Inpainting
 
 #### Interpolations
 
@@ -251,6 +246,13 @@ In this section, we demonstrate controls derived from the use of a diffusion fra
 #### Loop Sampling
 
 #### Stereo width
+
+## User Study Sample Questions
+Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the GoListen online platform [[1](#references)]. Citation will be added in the camera-ready version.
+
+### Audio Quality Assessment 
+
+### Subjective Audio Prompt Adherence
 
 
 ## References
