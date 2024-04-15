@@ -19,10 +19,26 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
 
 **This website is a work in progress that will be completed by April 17th.**
 
-
+* [User Study Sample Questions](#user-study-sample-questions)
+    + [Audio Quality Assessment](#audio-quality-assessment)
+    + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
+  * [Sound Examples](#sound-examples)
+    + [Context-based Control](#context-based-control)
+    + [Text-based Control](#text-based-control)
+      - [With Context](#with-context)
+      - [Without context](#without-context)
+    + [Audio-based Control](#audio-based-control)
+      - [With Context](#with-context-1)
+      - [Without Context](#without-context)
+    + [Bonus](#bonus)
+      - [Interpolations](#interpolations)
+      - [Variations](#variations)
+      - [Loop Sampling](#loop-sampling)
+      - [Stereo width](#stereo-width)
+  * [References](#references)
 
 ## User Study Sample Questions
-Here, you can find examples of the questions participants had to answer in our user studies.
+Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the GoListen online platform [[1](#references)]. Citation will be added in the camera-ready version.
 
 ### Audio Quality Assessment 
 
@@ -238,3 +254,5 @@ In this section, we demonstrate controls derived from the use of a diffusion fra
 #### Stereo width
 
 
+## References
+[1] *Barry, Dan, et al. "Go Listen: An End-to-End Online Listening Test Platform." Journal of Open Research Software 9.1 (2021)*
