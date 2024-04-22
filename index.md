@@ -304,8 +304,11 @@ Here, you can find examples of the questions participants had to answer in our u
 
 ### Audio Quality Assessment 
 
+[Here is a link to a demo of the Quality Assessment test.](https://golisten.ucd.ie/task/acr-test/662643b2552c347eae00849d)
+
 ### Subjective Audio Prompt Adherence
 
+[Here is a link to a demo of the Subjective Audio Prompt Adherence test.](https://golisten.ucd.ie/task/mushra-test/662644d5552c347eae00849e)
 
 ## References
 [1] *Barry, Dan, et al. "Go Listen: An End-to-End Online Listening Test Platform." Journal of Open Research Software 9.1 (2021)*
