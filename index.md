@@ -95,30 +95,26 @@ Given a context music piece, Diff-A-Riff allows the generation of accompaniments
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky">"A solo ukulele delivering a cheerful and sunny accompaniment."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt1/gen1_mix.wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt1/gen2_mix.wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky">"A mellow synthesizer playing ethereal pads."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt2/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/context.mp3" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky">"Drums with reverb and a lot of toms."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt1/gen1_mix.wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt1/gen2_mix.wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky">"Drums with reverb and a lot of soft hats."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt2/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
 </tbody>
 </table>
@@ -136,22 +132,14 @@ Diff-A-Riff also allows the generation of solo instrument tracks conditioned on 
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky">"Guitar played folk style."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-  <tr>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">"Example Prompt"</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/sample.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <tr>
+    <td class="tg-0pky">"Slow evolving pad synth."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
 </tbody>
 </table>
