@@ -14,18 +14,18 @@ audio::-webkit-media-controls-seek-forward-button {
 
 # Diff-A-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models
 
-**This website is a work in progress that will be completed by April 23rd.**
+**This website is a work in progress that will be completed by April 24th.**
 
 This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
 
   * [System's Overview](#systems-overview)
   * [Sound Examples](#sound-examples)
-    + [Accompaniment Generation : a context is provided](#accompaniment-generation---a-context-is-provided)
-      - [Context-only, no CLAP](#context-only--no-clap)
+    + [Accompaniment Generation : a context is provided](#accompaniment-generation--a-context-is-provided)
+      - [Context-only, no CLAP](#context-only-no-clap)
       - [With Text CLAP](#with-text-clap)
       - [With Audio CLAP](#with-audio-clap)
       - [Complete Music Excerpts](#complete-music-excerpts)
-    + [Single Track generation : no context is provided](#single-track-generation---no-context-is-provided)
+    + [Single Track generation : no context is provided](#single-track-generation--no-context-is-provided)
       - [Fully Unconditional](#fully-unconditional)
       - [With Text CLAP](#with-text-clap-1)
       - [With Audio CLAP](#with-audio-clap-1)
