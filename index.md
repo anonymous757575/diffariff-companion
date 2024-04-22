@@ -18,27 +18,27 @@ audio::-webkit-media-controls-seek-forward-button {
 
 This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
 
-* [System's Overview](#systems-overview)
-* [Sound Examples](#sound-examples)
-  + [Context-based Control](#context-based-control)
-  + [Text-based Control](#text-based-control)
-    - [With Context](#with-context)
-    - [Without context](#without-context)
-  + [Audio-based Control](#audio-based-control)
-    - [With Context](#with-context-1)
-    - [Without Context](#without-context)
-    - [Complete Music Excerpts](#complete-music-excerpts)
-  + [Fully Unconditional](#fully-unconditional)
-  + [Bonus](#bonus)
-    - [Inpainting](#inpainting)
-    - [Interpolations](#interpolations)
-    - [Variations](#variations)
-    - [Loop Sampling](#loop-sampling)
-    - [Stereo width](#stereo-width)
-* [User Study Sample Questions](#user-study-sample-questions)
-  + [Audio Quality Assessment](#audio-quality-assessment)
-  + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
-* [References](#references)
+  * [System's Overview](#systems-overview)
+  * [Sound Examples](#sound-examples)
+    + [Accompaniment Generation : a context is provided](#accompaniment-generation---a-context-is-provided)
+      - [Context-only, no CLAP](#context-only--no-clap)
+      - [With Text CLAP](#with-text-clap)
+      - [With Audio CLAP](#with-audio-clap)
+      - [Complete Music Excerpts](#complete-music-excerpts)
+    + [Single Track generation : no context is provided](#single-track-generation---no-context-is-provided)
+      - [Fully Unconditional](#fully-unconditional)
+      - [With Text CLAP](#with-text-clap-1)
+      - [With Audio CLAP](#with-audio-clap-1)
+    + [Bonus](#bonus)
+      - [Inpainting](#inpainting)
+      - [Interpolations](#interpolations)
+      - [Variations](#variations)
+      - [Stereo width](#stereo-width)
+      - [Loop Sampling](#loop-sampling)
+  * [User Study Sample Questions](#user-study-sample-questions)
+    + [Audio Quality Assessment](#audio-quality-assessment)
+    + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
+  * [References](#references)
 
 ## System's Overview 
 <!-- ![Overview of Diff-A-Riff](https://anonymous757575.github.io/diffariff-companion/diff-a-riff-website.png "Title") -->
@@ -48,12 +48,18 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
   <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
 </figure>
 
+Here, I would add a reminder for the notation, and use it later 
+$\textit{CLAP}_\text{Audio}$, $\textit{CLAP}_\text{Text}$ and $\textit{Context}$
+Maybe rewrite the caption to focus on inference. Maybe remove the training-related stuff in the fig ? 
 
 ## Sound Examples
 In this section, we demonstrate the generation abilities of our model under different conditioning signals.
 
-### Context-based Control
-Given an existing piece of music, Diff-A-Riff allows the generation of various accompaniments. Here, we present various context music pieces and accompaniments generated conditioned on this context only.
+### Accompaniment Generation : a context is provided
+In this section, we demonstrate the ability of Diff-A-Riff to generate accompaniments, single tracks that fit a pre-existing context.
+
+#### Context-only, no CLAP
+The model can generate accompaniments from a context only, without the need for CLAP embeddings.
 
 <table class="tg">
 <thead>
@@ -94,14 +100,8 @@ Given an existing piece of music, Diff-A-Riff allows the generation of various a
 </tbody>
 </table>
 
-
-
-### Text-based Control
-
-
-#### With Context
-Given a context music piece, Diff-A-Riff allows the generation of accompaniments based on a text prompt. Here, we present various context music pieces and various text-based accompaniments.
-
+#### With Text CLAP
+Given a context music piece, Diff-A-Riff allows to specify the accompaniment using a text prompt. Here, we present various context music pieces and various text-based accompaniments.
 
 <table class="tg">
 <thead>
@@ -137,35 +137,7 @@ Given a context music piece, Diff-A-Riff allows the generation of accompaniments
 </tbody>
 </table>
 
-#### Without context 
-Diff-A-Riff also allows the generation of solo instrument tracks conditioned on text only.
-
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Text Prompt</th>
-    <th class="tg-0lax" colspan="3">Generations</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">"Guitar played folk style."</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-    <tr>
-    <td class="tg-0pky">"Slow evolving pad synth."</td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-</tbody>
-</table>
-
-
-### Audio-based Control
-
-#### With Context
+#### With Audio CLAP
 Given a context music piece, Diff-A-Riff allows the generation of accompaniments based on an audio reference. Here, we present various context music pieces and various audio-based accompaniments.
 
 <table class="tg">
@@ -202,8 +174,84 @@ Given a context music piece, Diff-A-Riff allows the generation of accompaniments
 </tbody>
 </table>
 
+#### Complete Music Excerpts
+Using an iterative mechanism where we generate tracks and sum them to constitute a context for the next iteration, we are able to generate multi track music pieces from Diff-A-Riff. Here you can find excerpts of multitrack music generated this way.
 
-#### Without Context 
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_3.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_5.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_6.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_7.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_9.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_10.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_11.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_12.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+ 
+</tbody>
+</table>
+
+
+
+### Single Track generation : no context is provided
+Diff-A-Riff also allows the generation of solo instrument tracks without a context. We then refer to it as single track generation, rather than accompaniment.
+
+#### Fully Unconditional
+In this section, we show clips generated without context or CLAP conditioning.
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+    <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen3.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen5.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  
+</tbody>
+</table>
+
+#### With Text CLAP
+In this section, you can hear single instrument tracks generated solely from a text prompt
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Text Prompt</th>
+    <th class="tg-0lax" colspan="3">Generations</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">"Guitar played folk style."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+    <tr>
+    <td class="tg-0pky">"Slow evolving pad synth."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+</tbody>
+</table>
+
+#### With Audio CLAP
 Diff-A-Riff also allows the generation of solo instrument tracks conditioned on audio only.
 <table class="tg">
 <thead>
@@ -234,66 +282,23 @@ Diff-A-Riff also allows the generation of solo instrument tracks conditioned on 
 </tbody>
 </table>
 
-#### Complete Music Excerpts
 
-Here you can find excerpts of multitrack music
-<table class="tg">
-<tbody>
-  <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_3.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_5.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_6.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_7.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_9.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
 
-  <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_10.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_11.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/full/track_12.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
- 
-</tbody>
-</table>
-
-### Fully Unconditional
-In this section, we show clips generated without context or CLAP conditioning.
-<table class="tg">
-<tbody>
-  <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-    <tr>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen3.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen5.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
-  
-</tbody>
-</table>
 
 ### Bonus
-In this section, we demonstrate controls derived from the use of a diffusion framework.
+In this section, we demonstrate additional controls derived from the use of a diffusion framework.
 
 #### Inpainting
+We can inpaint...
 
 #### Interpolations
+We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derivec one.
 
 #### Variations
-
-#### Loop Sampling
+Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding very little noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio.
 
 #### Stereo width
+Based on the exact same principle as the one used for variations, for any mono signal, we can create a tiny variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width ratios.
 
 <table class="tg">
 <thead>
@@ -326,6 +331,10 @@ In this section, we demonstrate controls derived from the use of a diffusion fra
   </tr>
 </tbody>
 </table>
+
+#### Loop Sampling
+Loop ?
+
 
 ## User Study Sample Questions
 Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the [GoListen](https://golisten.ucd.ie/) online platform [[1](#references)]. Citation will be added in the camera-ready version.
