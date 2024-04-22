@@ -18,6 +18,7 @@ audio::-webkit-media-controls-seek-forward-button {
 
 This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
 
+* [System's Overview](#systems-overview)
 * [Sound Examples](#sound-examples)
   + [Context-based Control](#context-based-control)
   + [Text-based Control](#text-based-control)
@@ -38,6 +39,9 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
   + [Audio Quality Assessment](#audio-quality-assessment)
   + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
 * [References](#references)
+
+## System's Overview 
+![Overview of Diff-A-Riff](https://anonymous757575.github.io/diffariff-companion/diff-a-riff-website.png "Title")
 
 
 ## Sound Examples
