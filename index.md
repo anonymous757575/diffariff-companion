@@ -45,7 +45,7 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
 
 <figure>
   <img src="https://anonymous757575.github.io/diffariff-companion/diff-a-riff-website.png" alt="Overview of Diff-A-Riff"/>
-  <figcaption>Overview of Diff-A-Riff. The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
+  <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
 </figure>
 
 
