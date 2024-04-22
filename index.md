@@ -300,7 +300,7 @@ In this section, we demonstrate controls derived from the use of a diffusion fra
 </table>
 
 ## User Study Sample Questions
-Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the GoListen online platform [[1](#references)]. Citation will be added in the camera-ready version.
+Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the [GoListen](https://golisten.ucd.ie/) online platform [[1](#references)]. Citation will be added in the camera-ready version.
 
 ### Audio Quality Assessment 
 
