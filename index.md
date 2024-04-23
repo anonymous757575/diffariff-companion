@@ -322,45 +322,45 @@ Tracks are inpainted from second 5 to 8.
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/context.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/original_masked.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting0_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpaiting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpaiting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpaiting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/1/inpainting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
 <!-- new ctx -->
   <tr>
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/context.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/original_masked.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting0_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpaiting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpaiting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpaiting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/2/inpainting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
 <!-- new ctx -->
   <tr>
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/context.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax" rowspan="3"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/original_masked.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting0_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpaiting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpaiting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpaiting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/inpainting/3/inpainting2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
 <!-- new ctx -->
 </tbody>
