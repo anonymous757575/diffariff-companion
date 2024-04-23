@@ -7,3 +7,8 @@ description: "This is the accompanying website to 'Diff-a-Riff: Musical Accompan
 show_downloads: false
 github:
   is_project_page: false
+
+
+markdown: kramdown
+kramdown:
+    math_engine: katex

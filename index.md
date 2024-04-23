@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
 <style>
 audio{
   width:200px;
@@ -8,7 +12,6 @@ audio::-webkit-media-controls-seek-back-button,
 audio::-webkit-media-controls-seek-forward-button {
   display: none !important;
 }
-
 </style>
 
 
@@ -49,7 +52,7 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
 </figure>
 
 Here, I would add a reminder for the notation, and use it later 
-$\textit{CLAP}_\text{Audio}$, $\textit{CLAP}_\text{Text}$ and $\textit{Context}$
+$$\textit{CLAP}_\text{Audio}$$, $$\textit{CLAP}_\text{Text}$$ and $$\textit{Context}$$
 Maybe rewrite the caption to focus on inference. Maybe remove the training-related stuff in the fig ? 
 
 ## Sound Examples
