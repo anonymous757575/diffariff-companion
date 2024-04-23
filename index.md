@@ -230,16 +230,17 @@ In this section, we show clips generated without context or CLAP conditioning.
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen6.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen7.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+
   <tr>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen9.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen10.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen11.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-      <tr>
+  <tr>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen12.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen13.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen14.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
-  </tr>
   </tr>
   
 </tbody>
@@ -370,7 +371,54 @@ Tracks are inpainted from second 5 to 8.
 </table>
 
 #### Interpolations
-We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derivec one.
+We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derived one.
+
+<table class="tg">
+<tbody>
+  <tr>
+    <th class="tg-0pky"> Audio Reference </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <th class="tg-0pky"> $$ t = 0 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen0.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <th class="tg-0pky"> $$ t = 0.2 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen0.2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen0.2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+
+  <tr>
+    <th class="tg-0pky"> $$ t = 0.4 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen0.4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen0.4.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <th class="tg-0pky"> $$ t = 0.6 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen0.6.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen0.6.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <th class="tg-0pky"> $$ t = 0.8 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen0.8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen0.8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <th class="tg-0pky"> $$ t = 1 $$ </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/bonus/interpolations/3/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+    <tr>
+    <th class="tg-0pky"> Text Prompt </td>
+    <td class="tg-0pky"> "Latin Percussion" </td>
+    <td class="tg-0pky"> "Oriental Percussion Texture" </td>
+  </tr>
+  
+</tbody>
+</table>
 
 #### Variations
 Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding very little noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio.
