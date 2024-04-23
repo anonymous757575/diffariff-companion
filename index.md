@@ -267,6 +267,18 @@ In this section, you can hear single instrument tracks generated solely from a t
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
+  </tr>
+    <tr>
+    <td class="tg-0pky">"A vibrant, funky bassline characterized by the electrifying slap technique, where each note pops with a distinct rhythmic snap and sizzle."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/3/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/3/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  </tr>
+    <tr>
+    <td class="tg-0pky">"A pulsating techno drum beat, where a deep bass kick thunders every quarter note, creating a relentless and hypnotic pulse."</td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/4/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/4/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
 </tbody>
 </table>
 
