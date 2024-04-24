@@ -27,7 +27,7 @@ audio::-webkit-media-controls-seek-forward-button {
 
 **This website is a work in progress that will be completed by April 24th.**
 
-This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
+This is the accompanying website to "Diff-A-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
 
   * [System's Overview](#systems-overview)
   * [Sound Examples](#sound-examples)
