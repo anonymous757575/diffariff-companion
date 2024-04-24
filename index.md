@@ -43,14 +43,14 @@ This is the accompanying website to "Diff-A-Riff: Musical Accompaniment Co-creat
     + [Bonus](#bonus)
       - [Inpainting](#inpainting)
       - [Interpolations](#interpolations)
-      - [Variations](#variations)
       - [Stereo width](#stereo-width)
+      - [Variations](#variations)
       - [Loop Sampling](#loop-sampling)
   * [User Study Sample Questions](#user-study-sample-questions)
     + [Audio Quality Assessment](#audio-quality-assessment)
     + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
   * [Ethics Statement](#ethics-statement)
-  * [References](#references)
+  * [Extra References](#extra-references)
 
 ## System's Overview 
 <!-- ![Overview of Diff-A-Riff](https://anonymous757575.github.io/diffariff-companion/diff-a-riff-website.png "Title") -->
@@ -376,8 +376,10 @@ In this section, we show single instrument tracks generated without context or C
 In this section, we demonstrate additional controls derived from the use of a diffusion framework.
 
 #### Inpainting
-We can inpaint...
-Tracks are inpainted from second 5 to 8.
+As done traditionally with diffusion models, Diff-A-Riff can be used to perform audio inpainting. At each denoising step, the region to be kept is replaced with the corresponding noisy region of the final output, while the inpainted region is denoised normally. This way, we can enforce the inpainted region to blend well with the surroundings.
+
+In line with most diffusion models, Diff-A-Riff allows to perform audio inpainting. During each denoising iteration, the inpainted area undergoes standard denoising, while the region to keep is substituted with its noisy counterpart from the final output. This approach ensures seamless integration of the inpainted section with its surroundings.
+In the following examples, all tracks are inpainted from second 5 to 8.
 
 <table class="tg">
 <thead>
@@ -508,7 +510,10 @@ We can interpolate between different references in the CLAP space. Here, we demo
 </table>
 
 #### Variations
-Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding very little noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio.
+
+<img src="https://anonymous757575.github.io/diffariff-companion/diags/variation.png" alt="Variation Generation"/>
+
+Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio.
 
 <table class="tg">
 <thead>
@@ -549,11 +554,12 @@ Given an audio file, we can encode it in the CAE latent space and get the corres
 </tbody>
 </table>
 
+
 #### Stereo width
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/stereo.png" alt="Pseudo Stereo Generation"/>
 
-Based on the exact same principle as the one used for variations, for any mono signal, we can create a tiny variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width ratios.
+Following the same principle as for variations, for any mono signal, we can create a slight variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width ratios.
 
 <table class="tg">
 <thead>
@@ -644,7 +650,7 @@ By repeating a portion of the data being denoised, we can enforce repetitions in
 
 
 ## User Study Sample Questions
-Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the [GoListen](https://golisten.ucd.ie/) online platform [[1](#references)]. Citation will be added in the camera-ready version.
+Here, you can find examples of the questions participants had to answer in our user studies. The user studies were conducted using the [GoListen](https://golisten.ucd.ie/) online platform [[1](#extra-references)]. Citation will be added in the camera-ready version.
 
 ### Audio Quality Assessment 
 
@@ -659,5 +665,5 @@ Here, you can find examples of the questions participants had to answer in our u
 Diff-A-Riff raises ethical considerations regarding musical agency  emphasizing the need for a commitment to ethical practices. This technology is designed to support and enhance human creativity, not replace it. The technology provides tools for generating and manipulating musical elements with human guidance, ensuring that artists remain in control of creative decisions. Additionally, the technology is programmed to adapt to pre-existing material. Therefore, it is important for users to verify the uniqueness of their compositions to prevent plagiarism, as Diff-A-Riff is trained on copyrighted data.
 We recognize the impact of technology on society and are committed to continuously evaluating the ethical implications of Diff-A-Riff. We work with the music community to ensure our practices align with societal values and artistic norms, fostering trust and confidence in our technology. Furthermore, it is important to note that we cannot share our dataset as it is private and, while legally obtained, it contains material that prevents us from releasing the model in its current form. This issue raises concerns about scientific reproducibility. We are eager to discuss ethical and moral alternatives with anyone interested in this essential aspect of scientific progress.
 
-## References
+## Extra References
 [1] *Barry, Dan, et al. "Go Listen: An End-to-End Online Listening Test Platform." Journal of Open Research Software 9.1 (2021)*
