@@ -544,6 +544,9 @@ Given an audio file, we can encode it in the CAE latent space and get the corres
 </table>
 
 #### Stereo width
+
+<img src="https://anonymous757575.github.io/diffariff-companion/diags/stereo.png" alt="Pseudo Stereo Generation"/>
+
 Based on the exact same principle as the one used for variations, for any mono signal, we can create a tiny variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width ratios.
 
 <table class="tg">
@@ -579,6 +582,9 @@ Based on the exact same principle as the one used for variations, for any mono s
 </table>
 
 #### Loop Sampling
+
+<img src="https://anonymous757575.github.io/diffariff-companion/diags/loop.png" alt="Loop Sampling"/>
+
 Loop ?
 
 <table class="tg">
