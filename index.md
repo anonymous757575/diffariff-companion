@@ -211,7 +211,7 @@ The model can generate accompaniments from a context only, without the need for 
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/fulltracks.png" alt="Complete Music Excerpts"/>
 
-Using an mechanism where we generate tracks and iteratively sum them to constitute a context for the next iteration, we are able to generate multi track music pieces from Diff-A-Riff. Here you can find excerpts of multitrack music generated this way.
+Despite Diff-A-Riff generating only solo instrumental tracks, we are able to generate multi track music pieces. Starting from an ensemble of $$n$$ audio references from the evaluation set and an empty context, we iteratively generate new tracks which are summed into the context to condition the next iteration. After $$n$$ iterations, the initially empty context has become a full mix. Here you can find excerpts of multitrack music generated this way.
 
 <table class="tg">
 <tbody>
