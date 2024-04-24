@@ -115,6 +115,17 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/ref2/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/ref2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
+    <tr>
+    <td class="tg-0pky" rowspan="2"><audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref1/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref1/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref1/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref2/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref2/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/3/ref2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+  </tr>
 </tbody>
 </table>
 
