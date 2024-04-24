@@ -117,11 +117,9 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
 </tbody>
 </table>
 
-<sup>1</sup> 
-: Andres Guazzelli - Flores De Abril, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+<sup>1</sup> : Andres Guazzelli - Flores De Abril, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
-<sup>2</sup> 
-: The Abletones Big Band - Corine Corine, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+<sup>2</sup> : The Abletones Big Band - Corine Corine, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
 #### With Text CLAP
 
@@ -164,11 +162,9 @@ Diff-A-Riff also allows to specify the accompaniment using a text prompt. This r
 </tbody>
 </table>
 
-<sup>3</sup> 
-: Fergessen - Back From The Start, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+<sup>3</sup> : Fergessen - Back From The Start, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
-<sup>4</sup> 
-: Ian Dearden - Song for John, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+<sup>4</sup> : Ian Dearden - Song for John, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
 #### Context-only, no CLAP
 
