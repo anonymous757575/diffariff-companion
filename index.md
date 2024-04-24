@@ -196,6 +196,7 @@ The model can generate accompaniments from a context only, without the need for 
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/context-only/2/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/context-only/2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/context-only/2/gen3_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+        <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/context-only/2/gen4_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/context-only/3/context.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
@@ -519,7 +520,7 @@ Given an audio file, we can encode it in the CAE latent space and get the corres
 <thead>
   <tr>
     <th class="tg-0pky">Reference</th>
-    <th class="tg-0lax">Variation strength $$s_\text{Var} = 0.2$$</th>
+    <th class="tg-0lax">$$s_\text{Var} = 0.2$$</th>
     <th class="tg-0lax">$$0.5$$</th>
     <th class="tg-0lax">$$0.8$$</th>
 
