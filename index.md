@@ -71,7 +71,7 @@ Given a pair of input context and target accompaniment audio segments, the model
 - Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
 ## Sound Examples
-In this section, we demonstrate the generation abilities of our model under different conditioning signals. When no detial is provided, the generations are computed using $$\text{CFG}_\textit{Context} = \text{CFG}_\textit{CLAP} = 1.25$$ and $$T=30$$ diffusion steps.
+In this section, we demonstrate the generation abilities of our model under different conditioning signals. When no detial is provided, the generations are computed using $$\text{CFG}_\textit{Context} = \text{CFG}_\textit{CLAP} = 1.25$$, $$T=30$$ diffusion steps and a stereo width $$s_\text{Stereo}=0.4$$ .
 
 ### Accompaniment Generation : a context is provided
 In this section, we demonstrate the ability of Diff-A-Riff to generate **accompaniments**, single tracks that fit a pre-existing context.
@@ -560,7 +560,7 @@ Given an audio file, we can encode it in the CAE latent space and get the corres
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/stereo.png" alt="Pseudo Stereo Generation"/>
 
-Following the same principle as for variations, for any mono signal, we can create a slight variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width strengths $$s_\text{Stereo}$$.
+Following the same principle as for variations, for any mono signal, we can create a slight variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width $$s_\text{Stereo}$$.
 
 <table class="tg">
 <thead>
