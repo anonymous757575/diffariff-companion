@@ -55,10 +55,16 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
 
 <figure>
   <img src="https://anonymous757575.github.io/diffariff-companion/diff-a-riff-website.png" alt="Overview of Diff-A-Riff"/>
-  <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
+  <!-- <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder.</figcaption> -->
 </figure>
 
-Diff-A-Riff allows to generate single instrument tracks under different conditioning signals.
+
+
+In this work, we introduce Diff-A-Riff, a Latent Diffusion Model capable of generating instrumental accompaniments for any musical audio context. 
+
+Our approach relies on a pretrained consistency model-based Autoencoder (CAE) and we train a generative model on its latent embeddings. The proposed generative model is a LDM following the framework of Elucidated Diffusion Models (EDMs). The architecture follows DDPM++, an upgraded version of the originally proposed Diffusion Probabilistic Model. Given a pair of input context and target accompaniment audio segments, the model is trained to reconstruct the accompaniment given the context and a CLAP embedding derived from a randomly selected sub-segment of the target itself.
+
+At inference time, Diff-A-Riff allows to generate single instrument tracks under different conditioning signals.
 - First, a user can choose to provide a context, which is a piece of music that the generated material has to fit into. If provided, the context is encoded by the CAE to give a sequence of latents that we call $$\textit{Context}$$. When a context provided, we talk of accompaniment generation instead of single instrument generation.
 - Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
