@@ -17,8 +17,8 @@ audio::-webkit-media-controls-seek-forward-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  max-height:220px;
+  /* width: 60%; */
+  height:200px;
 }
 </style>
 
