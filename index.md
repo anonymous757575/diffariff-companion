@@ -120,7 +120,7 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
 #### With Text CLAP
 
 <!-- ![Context + Text CLAP setup](https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png) -->
-<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png" alt="Context + Text CLAP setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png" alt="Context + Text CLAP setup" />
 
 Diff-A-Riff also allows to specify the accompaniment using a text prompt. This represents conditioning on $$\textit{CLAP}_\text{T}$$ and $$\textit{Context}$$. Here, we present various context music pieces and various text-based accompaniments.
 
@@ -161,7 +161,7 @@ Diff-A-Riff also allows to specify the accompaniment using a text prompt. This r
 #### Context-only, no CLAP
 
 <!-- ![Context only setup](https://anonymous757575.github.io/diffariff-companion/diags/noclap.png) -->
-<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/noclap.png" alt="Context only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/noclap.png" alt="Context only setup"/>
 
 
 
@@ -248,7 +248,7 @@ Diff-A-Riff also allows the generation of solo instrument tracks without a conte
 #### With Audio CLAP
 
 <!-- ![Audio CLAP only setup](https://anonymous757575.github.io/diffariff-companion/diags/clapa.png) -->
-<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapa.png" alt="Audio CLAP only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapa.png" alt="Audio CLAP only setup"/>
 
 
 Diff-A-Riff also allows the generation of solo instrument tracks conditioned on audio only ($$\textit{CLAP}_\text{A}$$ only).
@@ -284,7 +284,7 @@ Diff-A-Riff also allows the generation of solo instrument tracks conditioned on 
 #### With Text CLAP
 
 <!-- ![Text CLAP only setup](https://anonymous757575.github.io/diffariff-companion/diags/clapt.png) -->
-<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapt.png" alt="Text CLAP only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapt.png" alt="Text CLAP only setup"/>
 
 
 In this section, you can hear single instrument tracks generated solely from a text prompt ($$\textit{CLAP}_\text{T}$$ only).
