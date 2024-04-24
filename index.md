@@ -32,14 +32,14 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
   * [System's Overview](#systems-overview)
   * [Sound Examples](#sound-examples)
     + [Accompaniment Generation : a context is provided](#accompaniment-generation--a-context-is-provided)
-      - [Context-only, no CLAP](#context-only-no-clap)
-      - [With Text CLAP](#with-text-clap)
       - [With Audio CLAP](#with-audio-clap)
+      - [With Text CLAP](#with-text-clap)
+      - [Context-only, no CLAP](#context-only-no-clap)
       - [Complete Music Excerpts](#complete-music-excerpts)
     + [Single Track generation : no context is provided](#single-track-generation--no-context-is-provided)
-      - [Fully Unconditional](#fully-unconditional)
-      - [With Text CLAP](#with-text-clap-1)
       - [With Audio CLAP](#with-audio-clap-1)
+      - [With Text CLAP](#with-text-clap-1)
+      - [Fully Unconditional](#fully-unconditional)
     + [Bonus](#bonus)
       - [Inpainting](#inpainting)
       - [Interpolations](#interpolations)
@@ -70,7 +70,7 @@ Given a pair of input context and target accompaniment audio segments, the model
 - Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
 ## Sound Examples
-In this section, we demonstrate the generation abilities of our model under different conditioning signals.
+In this section, we demonstrate the generation abilities of our model under different conditioning signals. When no detial is provided, the generations are computed using $$\text{CFG}_\textit{Context} = \text{CFG}_\textit{CLAP} = 1.25$$ and $$T=30$$ diffusion steps.
 
 ### Accompaniment Generation : a context is provided
 In this section, we demonstrate the ability of Diff-A-Riff to generate **accompaniments**, single tracks that fit a pre-existing context.
@@ -243,7 +243,7 @@ Despite Diff-A-Riff generating only solo instrumental tracks, we are able to gen
 
 
 ### Single Track generation : no context is provided
-Diff-A-Riff also allows the generation of solo instrument tracks without a context. We then refer to it as single track generation, rather than accompaniment.
+Diff-A-Riff also allows the generation of solo instrument tracks without a context. We then refer to it as **single track generation**, rather than accompaniment.
 
 #### With Audio CLAP
 
@@ -302,19 +302,17 @@ In this section, you can hear single instrument tracks generated solely from a t
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/1/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-    <tr>
+  <tr>
     <td class="tg-0pky">"Slow evolving pad synth."</td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/2/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-  </tr>
-    <tr>
+  <tr>
     <td class="tg-0pky">"A vibrant, funky bassline characterized by the electrifying slap technique, where each note pops with a distinct rhythmic snap and sizzle."</td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/3/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/3/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-  </tr>
-    <tr>
+  <tr>
     <td class="tg-0pky">"A pulsating techno drum beat, where a deep bass kick thunders every quarter note, creating a relentless and hypnotic pulse."</td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/4/gen1.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/no-context/4/gen2.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
@@ -329,7 +327,7 @@ In this section, you can hear single instrument tracks generated solely from a t
 <img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/uncond.png" alt="Unconditional setup"/>
 
 
-In this section, we show clips generated without context or CLAP conditioning.
+In this section, we show single instrument tracks generated without context or CLAP conditioning.
 <table class="tg">
 <tbody>
   <tr>
@@ -347,7 +345,6 @@ In this section, we show clips generated without context or CLAP conditioning.
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen7.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen8.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
-
   <tr>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen9.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/uncond/gen10.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
@@ -436,7 +433,7 @@ Tracks are inpainted from second 5 to 8.
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/interpolations.png" alt="Interpolations"/>
 
-We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derived one.
+We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derived one, with an interpolation ratio $$r$$.
 
 <table class="tg">
 <tbody>
@@ -552,7 +549,7 @@ Based on the exact same principle as the one used for variations, for any mono s
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky">Stereo Width = 0</th>
+    <th class="tg-0pky"> $$s_\text{Stereo}$$ = 0 </th>
     <th class="tg-0lax">0.2</th>
     <th class="tg-0lax">0.4</th>
     <th class="tg-0lax">0.5</th>
@@ -585,13 +582,12 @@ Based on the exact same principle as the one used for variations, for any mono s
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/loop.png" alt="Loop Sampling"/>
 
-Loop ?
-
+By repeating a portion of the data being denoised, we can enforce repetitions in the generated material. We can enforce this repetition for a fraction $$s_\text{Loop}$$ of the diffusion steps, and let the model denoise normally for the remaining last steps to introduce slight variations.
 <table class="tg">
 <thead>
   <tr>
     <th class="tg-0pky">Number of Repetitions</th>
-    <th class="tg-0pky">Loop Strength</th>
+    <th class="tg-0pky">$$s_\text{Loop}$$</th>
     <th class="tg-0lax" colspan="3">Generations</th>
   </tr>
 </thead>
