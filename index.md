@@ -12,6 +12,13 @@ audio::-webkit-media-controls-seek-back-button,
 audio::-webkit-media-controls-seek-forward-button {
   display: none !important;
 }
+
+.diag{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 
 
@@ -51,6 +58,7 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
   <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
 </figure>
 
+Diff-A-Riff allows to generate single instrument tracks under different conditioning signals. 
 Here, I would add a reminder for the notation, and use it later 
 $$\textit{CLAP}_\text{A}$$, $$\textit{CLAP}_\text{T}$$ and $$\textit{Context}$$
 Maybe rewrite the caption to focus on inference. Maybe remove the training-related stuff in the fig ? 
@@ -64,7 +72,7 @@ In this section, we demonstrate the ability of Diff-A-Riff to generate accompani
 #### With Audio CLAP
 
 <!-- ![Context + Audio CLAP setup](https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapa.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapa.png" alt="Context + Audio CLAP setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapa.png" alt="Context + Audio CLAP setup"/>
 
 
 Given a context music piece, Diff-A-Riff allows the generation of accompaniments based on an audio reference. This represent conditioning on $$\textit{CLAP}_\text{A}$$ and $$\textit{Context}$$, and is equivalent to the training setup. Here, we present various context music pieces and various audio-based accompaniments.
