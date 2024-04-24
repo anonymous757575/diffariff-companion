@@ -511,7 +511,7 @@ We can interpolate between different references in the CLAP space. Here, we demo
 
 #### Variations
 
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/variation.png" alt="Variation Generation"/>
+<img class = "diag" src="https://anonymous757575.github.io/diffariff-companion/diags/variation.png" alt="Variation Generation"/>
 
 Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio. The amount of noise added is controlled through the variation strength parameter $$s_\text{Var}$$, which allows to control how different to the original a variation can be.
 
