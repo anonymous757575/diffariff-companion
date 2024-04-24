@@ -93,7 +93,7 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"><sup>1</sup> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio></td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/ref1/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/ref1/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/ref1/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
@@ -104,7 +104,7 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/1/ref2/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"><sup>2</sup><audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/ref1/ref.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/ref1/gen1_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/audio-cond/context/2/ref1/gen2_mix.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
@@ -116,6 +116,12 @@ Diff-A-Riff allows the generation of accompaniments based on an audio reference.
   </tr>
 </tbody>
 </table>
+
+<sup>1</sup> 
+: Andres Guazzelli - Flores De Abril, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+
+<sup>2</sup> 
+: The Abletones Big Band - Corine Corine, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
 #### With Text CLAP
 
@@ -134,7 +140,7 @@ Diff-A-Riff also allows to specify the accompaniment using a text prompt. This r
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"><sup>3</sup> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/context.mp3" type="audio/mp3"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky">"A solo ukulele delivering a cheerful and sunny accompaniment."</td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt1/gen1_mix_vol.wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt1/gen2_mix_vol.wav"> Your Browser does not support the audio tag </audio> </td>
@@ -145,7 +151,7 @@ Diff-A-Riff also allows to specify the accompaniment using a text prompt. This r
     <td class="tg-0pky"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/1/prompt2/gen2_mix_vol.wav" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/context.mp3" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
+    <td class="tg-0pky" rowspan="2"> <sup>4</sup><audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/context.mp3" type="audio/wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0pky">"Drums with reverb and a lot of toms."</td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt1/gen1_mix_vol.wav"> Your Browser does not support the audio tag </audio> </td>
     <td class="tg-0lax"> <audio controls controlsList="nodownload"><source src="https://anonymous757575.github.io/diffariff-companion/audios/text-cond/context/2/prompt1/gen2_mix_vol.wav"> Your Browser does not support the audio tag </audio> </td>
@@ -157,6 +163,12 @@ Diff-A-Riff also allows to specify the accompaniment using a text prompt. This r
   </tr>
 </tbody>
 </table>
+
+<sup>3</sup> 
+: Fergessen - Back From The Start, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
+
+<sup>4</sup> 
+: Ian Dearden - Song for John, from [The 'Mixing Secrets' Free Multitrack Library](https://www.cambridge-mt.com/ms/mtk/)
 
 #### Context-only, no CLAP
 
