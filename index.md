@@ -49,6 +49,7 @@ This is the accompanying website to "Diff-A-Riff: Musical Accompaniment Co-creat
   * [User Study Sample Questions](#user-study-sample-questions)
     + [Audio Quality Assessment](#audio-quality-assessment)
     + [Subjective Audio Prompt Adherence](#subjective-audio-prompt-adherence)
+  * [Ethics Statement](#ethics-statement)
   * [References](#references)
 
 ## System's Overview 
@@ -652,6 +653,11 @@ Here, you can find examples of the questions participants had to answer in our u
 ### Subjective Audio Prompt Adherence
 
 [Here is a link to a demo of the Subjective Audio Prompt Adherence test.](https://golisten.ucd.ie/task/mushra-test/662644d5552c347eae00849e)
+
+## Ethics Statement
+
+Diff-A-Riff raises ethical considerations regarding musical agency  emphasizing the need for a commitment to ethical practices. This technology is designed to support and enhance human creativity, not replace it. The technology provides tools for generating and manipulating musical elements with human guidance, ensuring that artists remain in control of creative decisions. Additionally, the technology is programmed to adapt to pre-existing material. Therefore, it is important for users to verify the uniqueness of their compositions to prevent plagiarism, as Diff-A-Riff is trained on copyrighted data.
+We recognize the impact of technology on society and are committed to continuously evaluating the ethical implications of Diff-A-Riff. We work with the music community to ensure our practices align with societal values and artistic norms, fostering trust and confidence in our technology. Furthermore, it is important to note that we cannot share our dataset as it is private and, while legally obtained, it contains material that prevents us from releasing the model in its current form. This issue raises concerns about scientific reproducibility. We are eager to discuss ethical and moral alternatives with anyone interested in this essential aspect of scientific progress.
 
 ## References
 [1] *Barry, Dan, et al. "Go Listen: An End-to-End Online Listening Test Platform." Journal of Open Research Software 9.1 (2021)*
