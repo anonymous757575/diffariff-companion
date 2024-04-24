@@ -17,7 +17,7 @@ audio::-webkit-media-controls-seek-forward-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 </style>
 
@@ -58,16 +58,15 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
   <figcaption> <b>Overview of Diff-A-Riff.</b> The CAE Encoder transforms the music context into a compressed representation, concatenated with a noisy sample, and further processed through the multi-scale U-Net. The generated latent sequence is decoded into audio via the CAE Decoder. We highlight frozen components in blue and trainable elements in orange. At inference time, the conditioning signals are optional and one can try different conditional setups.</figcaption>
 </figure>
 
-Diff-A-Riff allows to generate single instrument tracks under different conditioning signals. 
-Here, I would add a reminder for the notation, and use it later 
-$$\textit{CLAP}_\text{A}$$, $$\textit{CLAP}_\text{T}$$ and $$\textit{Context}$$
-Maybe rewrite the caption to focus on inference. Maybe remove the training-related stuff in the fig ? 
+Diff-A-Riff allows to generate single instrument tracks under different conditioning signals.
+- First, a user can choose to provide a context, which is a piece of music that the generated material has to fit into. If provided, the context is encoded by the CAE to give a sequence of latents that we call $$\textit{Context}$$. When a context provided, we talk of accompaniment generation instead of single instrument generation.
+- Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
 ## Sound Examples
 In this section, we demonstrate the generation abilities of our model under different conditioning signals.
 
 ### Accompaniment Generation : a context is provided
-In this section, we demonstrate the ability of Diff-A-Riff to generate accompaniments, single tracks that fit a pre-existing context.
+In this section, we demonstrate the ability of Diff-A-Riff to generate **accompaniments**, single tracks that fit a pre-existing context.
 
 #### With Audio CLAP
 
@@ -75,7 +74,7 @@ In this section, we demonstrate the ability of Diff-A-Riff to generate accompani
 <img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapa.png" alt="Context + Audio CLAP setup"/>
 
 
-Given a context music piece, Diff-A-Riff allows the generation of accompaniments based on an audio reference. This represent conditioning on $$\textit{CLAP}_\text{A}$$ and $$\textit{Context}$$, and is equivalent to the training setup. Here, we present various context music pieces and various audio-based accompaniments.
+Diff-A-Riff allows the generation of accompaniments based on an audio reference. This represent conditioning on $$\textit{CLAP}_\text{A}$$ and $$\textit{Context}$$, and is equivalent to the training setup. Here, we present various context music pieces and various audio-based accompaniments.
 
 <table class="tg">
 <thead>
@@ -114,9 +113,9 @@ Given a context music piece, Diff-A-Riff allows the generation of accompaniments
 #### With Text CLAP
 
 <!-- ![Context + Text CLAP setup](https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png" alt="Context + Text CLAP setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/ctx_clapt.png" alt="Context + Text CLAP setup" width="200"/>
 
-Given a context music piece, Diff-A-Riff allows to specify the accompaniment using a text prompt. This represents conditioning on $$\textit{CLAP}_\text{T}$$ and $$\textit{Context}$$. Here, we present various context music pieces and various text-based accompaniments.
+Diff-A-Riff also allows to specify the accompaniment using a text prompt. This represents conditioning on $$\textit{CLAP}_\text{T}$$ and $$\textit{Context}$$. Here, we present various context music pieces and various text-based accompaniments.
 
 <table class="tg">
 <thead>
@@ -155,7 +154,7 @@ Given a context music piece, Diff-A-Riff allows to specify the accompaniment usi
 #### Context-only, no CLAP
 
 <!-- ![Context only setup](https://anonymous757575.github.io/diffariff-companion/diags/noclap.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/noclap.png" alt="Context only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/noclap.png" alt="Context only setup" width="200"/>
 
 
 
@@ -239,7 +238,7 @@ Diff-A-Riff also allows the generation of solo instrument tracks without a conte
 #### With Audio CLAP
 
 <!-- ![Audio CLAP only setup](https://anonymous757575.github.io/diffariff-companion/diags/clapa.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/clapa.png" alt="Audio CLAP only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapa.png" alt="Audio CLAP only setup" width="200"/>
 
 
 Diff-A-Riff also allows the generation of solo instrument tracks conditioned on audio only ($$\textit{CLAP}_\text{A}$$ only).
@@ -275,7 +274,7 @@ Diff-A-Riff also allows the generation of solo instrument tracks conditioned on 
 #### With Text CLAP
 
 <!-- ![Text CLAP only setup](https://anonymous757575.github.io/diffariff-companion/diags/clapt.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/clapt.png" alt="Text CLAP only setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/clapt.png" alt="Text CLAP only setup" width="200"/>
 
 
 In this section, you can hear single instrument tracks generated solely from a text prompt ($$\textit{CLAP}_\text{T}$$ only).
@@ -317,7 +316,7 @@ In this section, you can hear single instrument tracks generated solely from a t
 #### Fully Unconditional
 
 <!-- ![Unconditional setup](https://anonymous757575.github.io/diffariff-companion/diags/uncond.png) -->
-<img src="https://anonymous757575.github.io/diffariff-companion/diags/uncond.png" alt="Unconditional setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/uncond.png" alt="Unconditional setup" width="200"/>
 
 
 In this section, we show clips generated without context or CLAP conditioning.
