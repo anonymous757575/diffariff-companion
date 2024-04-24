@@ -513,15 +513,15 @@ We can interpolate between different references in the CLAP space. Here, we demo
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/variation.png" alt="Variation Generation"/>
 
-Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio.
+Given an audio file, we can encode it in the CAE latent space and get the corresponding latent sequence. By adding noise to it, and denoising this noisy sequence again, we end up with a variation of the first sequence. We can then decode it to obtain a variation of the input audio. The amount of noise added is controlled through the variation strength parameter $$s_\text{Var}$$, which allows to control how different to the original a variation can be.
 
 <table class="tg">
 <thead>
   <tr>
     <th class="tg-0pky">Reference</th>
-    <th class="tg-0lax">Variation strength = 0.2</th>
-    <th class="tg-0lax">0.5</th>
-    <th class="tg-0lax">0.8</th>
+    <th class="tg-0lax">Variation strength $$s_\text{Var} = 0.2$$</th>
+    <th class="tg-0lax">$$0.5$$</th>
+    <th class="tg-0lax">$$0.8$$</th>
 
   </tr>
 </thead>
@@ -559,15 +559,15 @@ Given an audio file, we can encode it in the CAE latent space and get the corres
 
 <img src="https://anonymous757575.github.io/diffariff-companion/diags/stereo.png" alt="Pseudo Stereo Generation"/>
 
-Following the same principle as for variations, for any mono signal, we can create a slight variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width ratios.
+Following the same principle as for variations, for any mono signal, we can create a slight variation of it and use the original and the variation as left and right channels, creating what we call pseudo-stereo. Here, you can find examples of pseudo stereo files, generated from different stereo width strengths $$s_\text{Stereo}$$.
 
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky"> $$s_\text{Stereo}$$ = 0 </th>
-    <th class="tg-0lax">0.2</th>
-    <th class="tg-0lax">0.4</th>
-    <th class="tg-0lax">0.5</th>
+    <th class="tg-0pky"> $$s_\text{Stereo} = 0$$ </th>
+    <th class="tg-0lax">$$0.2$$</th>
+    <th class="tg-0lax">$$0.4$$</th>
+    <th class="tg-0lax">$$0.5$$</th>
 
   </tr>
 </thead>
