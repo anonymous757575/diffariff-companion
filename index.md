@@ -18,6 +18,7 @@ audio::-webkit-media-controls-seek-forward-button {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  max-height:220px;
 }
 </style>
 
@@ -62,9 +63,9 @@ This is the accompanying website to "Diff-a-Riff: Musical Accompaniment Co-creat
 
 In this work, we introduce Diff-A-Riff, a Latent Diffusion Model capable of generating instrumental accompaniments for any musical audio context. 
 
-Our approach relies on a pretrained consistency model-based Autoencoder (CAE) and we train a generative model on its latent embeddings. The proposed generative model is a LDM following the framework of Elucidated Diffusion Models (EDMs). The architecture follows DDPM++, an upgraded version of the originally proposed Diffusion Probabilistic Model. Given a pair of input context and target accompaniment audio segments, the model is trained to reconstruct the accompaniment given the context and a CLAP embedding derived from a randomly selected sub-segment of the target itself.
+Our approach relies on a pretrained consistency model-based Autoencoder (CAE) and we train a generative model on its latent embeddings. The proposed generative model is a LDM following the framework of Elucidated Diffusion Models (EDMs). The architecture follows DDPM++, an upgraded version of the originally proposed Diffusion Probabilistic Model. 
 
-At inference time, Diff-A-Riff allows to generate single instrument tracks under different conditioning signals.
+Given a pair of input context and target accompaniment audio segments, the model is trained to reconstruct the accompaniment given the context and a CLAP embedding derived from a randomly selected sub-segment of the target itself. At inference time, Diff-A-Riff allows to generate single instrument tracks under different conditioning signals.
 - First, a user can choose to provide a context, which is a piece of music that the generated material has to fit into. If provided, the context is encoded by the CAE to give a sequence of latents that we call $$\textit{Context}$$. When a context provided, we talk of accompaniment generation instead of single instrument generation.
 - Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
@@ -207,7 +208,10 @@ The model can generate accompaniments from a context only, without the need for 
 
 
 #### Complete Music Excerpts
-Using an iterative mechanism where we generate tracks and sum them to constitute a context for the next iteration, we are able to generate multi track music pieces from Diff-A-Riff. Here you can find excerpts of multitrack music generated this way.
+
+<img src="https://anonymous757575.github.io/diffariff-companion/diags/fulltracks.png" alt="Complete Music Excerpts"/>
+
+Using an mechanism where we generate tracks and iteratively sum them to constitute a context for the next iteration, we are able to generate multi track music pieces from Diff-A-Riff. Here you can find excerpts of multitrack music generated this way.
 
 <table class="tg">
 <tbody>
@@ -322,7 +326,7 @@ In this section, you can hear single instrument tracks generated solely from a t
 #### Fully Unconditional
 
 <!-- ![Unconditional setup](https://anonymous757575.github.io/diffariff-companion/diags/uncond.png) -->
-<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/uncond.png" alt="Unconditional setup" width="200"/>
+<img class="diag" src="https://anonymous757575.github.io/diffariff-companion/diags/uncond.png" alt="Unconditional setup"/>
 
 
 In this section, we show clips generated without context or CLAP conditioning.
@@ -429,6 +433,9 @@ Tracks are inpainted from second 5 to 8.
 </table>
 
 #### Interpolations
+
+<img src="https://anonymous757575.github.io/diffariff-companion/diags/interpolations.png" alt="Interpolations"/>
+
 We can interpolate between different references in the CLAP space. Here, we demonstrate the impact of a interpolation between an audio-derived CLAP embedding and a text-derived one.
 
 <table class="tg">
