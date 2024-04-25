@@ -22,19 +22,6 @@ audio::-webkit-media-controls-seek-forward-button {
 }
 </style>
 
-<script>
-// upon play of one audio element stop others
-for (audio of document.getElementsByTagName("audio")) {
-    audio.addEventListener("play", function(event) {
-	for (other of document.getElementsByTagName("audio")) {
-	    if ( this != other ) {
-		other.pause();
-	    }
-	}
-    });
-}
-</script>
-
 # Diff-A-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models
 
 This is the accompanying website to "Diff-A-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models" submitted to ISMIR 2024.
@@ -689,3 +676,18 @@ We recognize the impact of technology on society and are committed to continuous
 
 ## Extra References
 [1] *Barry, Dan, et al. "Go Listen: An End-to-End Online Listening Test Platform." Journal of Open Research Software 9.1 (2021)*
+
+
+<script>
+// upon play of one audio element stop others
+for (audio of document.getElementsByTagName("audio")) {
+    audio.addEventListener("play", function(event) {
+	for (other of document.getElementsByTagName("audio")) {
+	    if ( this != other ) {
+		other.pause();
+    other.currentTime = 0;
+	    }
+	}
+    });
+}
+</script>
