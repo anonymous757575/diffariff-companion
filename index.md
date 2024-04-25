@@ -22,6 +22,18 @@ audio::-webkit-media-controls-seek-forward-button {
 }
 </style>
 
+<script>
+// upon play of one audio element stop others
+for (audio of document.getElementsByTagName("audio")) {
+    audio.addEventListener("play", function(event) {
+	for (other of document.getElementsByTagName("audio")) {
+	    if ( this != other ) {
+		other.pause();
+	    }
+	}
+    });
+}
+</script>
 
 # Diff-A-Riff: Musical Accompaniment Co-creation via Latent Diffusion Models
 
