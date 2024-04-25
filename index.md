@@ -69,7 +69,7 @@ Given a pair of input context and target accompaniment audio segments, the model
 - Then, the user can also rely on CLAP-derived embedings to further specify the material to be generated. CLAP provides a multimodal embedding space shared between audio and text modalities. This means that the user can provide either a music reference or a text prompt, which after being encoded in CLAP give $$\textit{CLAP}_\text{A}$$ and $$\textit{CLAP}_\text{T}$$ respectively.
 
 ## Sound Examples
-In this section, we demonstrate the generation abilities of our model under different conditioning signals. When no detial is provided, the generations are computed using $$\text{CFG}_\textit{Context} = \text{CFG}_\textit{CLAP} = 1.25$$, $$T=30$$ diffusion steps and a stereo width $$s_\text{Stereo}=0.4$$ .
+In this section, we demonstrate the generation abilities of our model under different conditioning signals. When no detail is provided, the generations are computed using $$\text{CFG}_\textit{Context} = \text{CFG}_\textit{CLAP} = 1.25$$, $$T=30$$ diffusion steps and a stereo width $$s_\text{Stereo}=0.4$$ .
 
 ### Accompaniment Generation : a context is provided
 In this section, we demonstrate the ability of Diff-A-Riff to generate **accompaniments**, single tracks that fit a pre-existing context.
